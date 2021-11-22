@@ -3,6 +3,8 @@ let express = require("express");
 let path = require("path");
 let cookieParser = require("cookie-parser");
 let logger = require("morgan");
+const bodyParser = require("body-parser");
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 let indexRouter = require("./routes/index");
 let theStylistRouter = require("./routes/the-stylist");
